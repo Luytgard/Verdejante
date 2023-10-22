@@ -16,8 +16,8 @@ public class collectablesController : MonoBehaviour
     public int GetSeedCount() => this.seedCount;
     public void SetSeedCount(int seed) => this.seedCount = seed;
 
-    private void AddSeed(int seedToAdd) => SetSeedCount(seedCount + seedToAdd);
-    private void RemoveSeed(int seedToRemove) => SetSeedCount(seedCount - seedToRemove);
+    public void AddSeed(int seedToAdd) => SetSeedCount(seedCount + seedToAdd);
+    public void RemoveSeed(int seedToRemove) => SetSeedCount(seedCount - seedToRemove);
 
     private void UpdateSeedCountOnInterface(int seedCount)
     {
