@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 6168889165588098905}
   - component: {fileID: 5901680079480691793}
   - component: {fileID: 4375710381788613889}
-  - component: {fileID: 4911469443745453871}
   - component: {fileID: 3333080812589071450}
   - component: {fileID: 9148115996528138393}
   - component: {fileID: 1449769993344456853}
+  - component: {fileID: 3559633326876253074}
   m_Layer: 0
   m_Name: Amary
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,20 +111,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4911469443745453871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3530149903271379468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f7702f841862f84789573572d86c5ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seedCountText: {fileID: 0}
-  seedCount: 0
 --- !u!114 &3333080812589071450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,6 +123,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e382da5e3ff07da4ca2ba3a23fcf4edf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHealth: 0
+  maxHealth: 0
+  LifeBar: {fileID: 0}
   rb: {fileID: 1449769993344456853}
   groundCheck: {fileID: 4556212074880223356}
   groundLayer:
@@ -214,6 +203,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &3559633326876253074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3530149903271379468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f7702f841862f84789573572d86c5ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seedCount: 0
+  threeGameObject: {fileID: 8195910700105624914, guid: 0f7952a518a2a8141b13a6756be130d5, type: 3}
+  seedLocationTransform:
+  - {x: -4.443333e-19, y: 7.2e-43, z: 0.0000000131095}
 --- !u!1 &7522833697422541030
 GameObject:
   m_ObjectHideFlags: 0

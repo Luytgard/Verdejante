@@ -20,7 +20,7 @@ public class playerController : MonoBehaviour
     void Start()
     {
         speed = 8;
-        jumpingPower = 8f;
+        jumpingPower = 14f;
         isFacingRight = true;
     }
 
